@@ -29,6 +29,6 @@ node_modules
 .DS_Store
 *.tgz
 !test/fixtures/not-a-tarball.tgz
-!test/fixtures/tar-buffer-0.0.0.tgz
+!test/fixtures/npm-package-buffer-0.0.0.tgz
 test/output/*
 !test/output/.gitkeep
