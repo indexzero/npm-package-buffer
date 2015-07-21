@@ -1,6 +1,6 @@
 {
   "name": "npm-package-buffer",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Buffers entries from a tar.Parse() stream for an npm package into memory",
   "main": "npm-package-buffer.js",
   "scripts": {
