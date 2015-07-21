@@ -30,13 +30,13 @@ describe('npm-package-buffer simple', function () {
         assert.ok(!errState);
         assert.equal(typeof buffer.package, 'object');
         assert.deepEqual(Object.keys(buffer.files), [
-          'package/.npmignore',
-          'package/README.md',
-          'package/LICENSE',
-          'package/npm-package-buffer.js',
-          'package/test/simple.test.js',
-          'package/test/fixtures/not-a-tarball.tgz',
-          'package/test/fixtures/npm-package-buffer-0.0.0.tgz'
+          '.npmignore',
+          'README.md',
+          'LICENSE',
+          'npm-package-buffer.js',
+          'test/simple.test.js',
+          'test/fixtures/not-a-tarball.tgz',
+          'test/fixtures/npm-package-buffer-0.0.0.tgz'
         ]);
 
         done();

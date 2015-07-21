@@ -12,12 +12,17 @@ var events = require('events'),
  */
 var PackageBuffer = module.exports = function PackageBuffer(parser, opts) {
   if (!(this instanceof PackageBuffer)) { return new PackageBuffer(parser, opts); }
+
+  opts = opts || {};
+  opts.strip = opts.strip || 1;
+  opts.maxSize = opts.maxSize || Math.pow(10, 6);
+
   TarBuffer.call(this, parser, opts);
 
   var self = this;
   this.files = {};
   this.on('entry', function (e) {
-    if (e.path === 'package/package.json') {
+    if (e.path === 'package.json') {
       self.package = JSON.parse(e.content);
       return;
     }
