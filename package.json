@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/indexzero/npm-package-buffer",
   "dependencies": {
-    "tar-buffer": "^1.1.0"
+    "tar-buffer": "^1.3.0"
   },
   "devDependencies": {
     "istanbul": "~0.3.17",
