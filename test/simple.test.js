@@ -29,6 +29,8 @@ describe('npm-package-buffer simple', function () {
       .on('end', function () {
         assert.ok(!errState);
         assert.equal(typeof buffer.package, 'object');
+        assert.equal(typeof buffer.pkg, 'object');
+        assert.deepEqual(buffer.package, buffer.pkg);
         assert.deepEqual(Object.keys(buffer.files), [
           '.npmignore',
           'README.md',

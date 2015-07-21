@@ -16,8 +16,10 @@ var buffer = new PackageBuffer(parser)
   .on('end', function () {
     //
     // Log fully read the package.json
+    // aliased to `.pkg` as well.
     //
     console.dir(buffer.package);
+    console.dir(buffer.pkg);
 
     //
     // Log all our files in memory

@@ -23,7 +23,7 @@ var PackageBuffer = module.exports = function PackageBuffer(parser, opts) {
   this.files = {};
   this.on('entry', function (e) {
     if (e.path === 'package.json') {
-      self.package = JSON.parse(e.content);
+      self.package = self.pkg = JSON.parse(e.content);
       return;
     }
 
